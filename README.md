@@ -1,7 +1,7 @@
 flexHtml
 ========
 
-Personal starter frontend project.
+My personal lightweight starter frontend project.
 
 
 Features
