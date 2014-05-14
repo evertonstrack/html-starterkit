@@ -9,10 +9,10 @@ Features
 
 - HTML5 framework
 - WAI-ARIA implemantation
-- Htaccess (Boilerplane) with performance tools (Gzip compression, http headers, etc)
+- Htaccess (Boilerplane custom)
 - Includes jQuery v2.1.0 and relative fallback (v1.11.0) for olders browsers
-- Modernizr v2.7.1 included
-- Normalize.css v3.0.1 included
+- Latest Modernizr included
+- Latest Normalize.css included
 - Media queries for mobile main resolutions
 - Browser and O.S. Detection
 - Google Analytics snippet
