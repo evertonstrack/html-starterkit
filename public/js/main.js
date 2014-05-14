@@ -8,13 +8,12 @@ $html.browser();
     document.read
 */
 $(document).ready(function(){
-	
+
 });
 
 /*
     window.load
 */
 $(window).load(function(){
-	
+
 });
- 
