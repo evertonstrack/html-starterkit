@@ -1,7 +1,7 @@
-/* Author : Everton Strack (everton.strack@gmail.com) */      
+/* Author : Everton Strack (everton.strack@gmail.com) */
 
-$html = $('html');
 // Add browser, browser.version, browser.engine and operation system class on html
+$html = $('html');
 $html.browser();
 
 /*
