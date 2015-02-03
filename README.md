@@ -17,3 +17,4 @@ Features
 - Browser and O.S. Detection
 - Google Analytics snippet
 - Extremely lightweight
+- Header and menu responsive.
