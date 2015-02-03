@@ -2,10 +2,17 @@
 
 (function($, window, document) {
 
-// Add browser, browser.version, browser.engine and operation system class on html
-$html = $('html');
-$html.browser();
-
+/*
+	HELPER
+*/
+var Helper = {
+	init:function(){
+		
+	},
+	isIE:function(){
+		if(navigator.userAgent.match(/msie|trident/i)){ return true; }
+	}
+}
 
 /*
 	MAIN
@@ -16,12 +23,7 @@ var Main = {
 	}
 }
 
-/*
-	HELPER
-*/
-var Helper = {
-	init:function(){ }
-}
+
 
 
 /*
