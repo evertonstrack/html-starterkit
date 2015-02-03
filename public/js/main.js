@@ -2,22 +2,41 @@
 
 (function($, window, document) {
 
-	// Add browser, browser.version, browser.engine and operation system class on html
-	$html = $('html');
-	$html.browser();
+// Add browser, browser.version, browser.engine and operation system class on html
+$html = $('html');
+$html.browser();
 
-	/*
-	    document.read
-	*/
-	$(document).ready(function(){
 
-	});
+/*
+	MAIN
+*/
+var Main = {
+	init:function(){
+		Helper.init();
+	}
+}
 
-	/*
-	    window.load
-	*/
-	$(window).load(function(){
+/*
+	HELPER
+*/
+var Helper = {
+	init:function(){ }
+}
 
-	});
+
+/*
+    document.read
+*/
+$(document).ready(function(){
+	// Main.init
+	Main.init();
+});
+
+/*
+    window.load
+*/
+$(window).load(function(){ });
+
+
 
 }(window.jQuery, window, document));
