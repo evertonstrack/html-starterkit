@@ -9,6 +9,7 @@
         <meta name="description" content="Descrição do site">
 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" /> -->
 
         <!-- SHARE META-TAGS -->
         <!--
@@ -40,16 +41,27 @@
         <![endif]-->
 
         <!-- header -->
-        <header class="header clearfix" role="banner">
+        <header class="header clearfix fixed" role="banner">
+            
             <h1 class="logo">
-                <a href="/"></a>
+                <a href="#">flexHtml</a>
             </h1>
+
+            <input type="checkbox" id="control-nav" class="invisible" />
+            <label for="control-nav" class="control-nav"></label>
+            <label for="control-nav" class="control-nav-close"></label>
             
             <nav role="navigation">
-                
+                <div class="nav-container">
+                    <a href="#" title="Item 1">Item 1</a>
+                    <a href="#" title="Item 2">Item 2</a>
+                    <a href="#" title="Item 3">Item 3</a>
+                </div>
             </nav>
 
         </header>
+
+
         <!-- /header -->
         
         <!-- main -->
