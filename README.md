@@ -16,5 +16,13 @@ Features
 - Latest Normalize.css included;
 - Media queries for mobile main resolutions;
 - Google Analytics snippet;
-- Header and menu responsive.
-- Grunt implementation (Styles/Scripts minified, archive caching control, build generator)
+- Header responsive;
+- Grunt build (minify styles/scripts, caching control);
+
+
+Required (for grunt features)
+========
+
+- Install Node.js;
+- Open a command terminal window in the project folder and run the following commands: "npm install" and after "grunt";
+- The generated build will be in the folder "/dist";
