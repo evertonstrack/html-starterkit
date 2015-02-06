@@ -23,10 +23,12 @@ Features
 Required (for grunt features)
 ========
 
-Install [NodeJS](http://nodejs.org/), open a command terminal window in the project folder and run the following commands
+Install [NodeJS](http://nodejs.org/).
+Open a command terminal window in the project folder and run the following command to install the necessary local dependencies:
 ```
 $ npm install
 ```
+When completed, run next command for generate build:
 ```
 $ grunt
 ```
