@@ -10,8 +10,8 @@ module.exports = function(grunt) {
     var pkg = {
         app: '.',
         dist: 'dist',
-        views: 'application/views',
-        ext: 'php',
+        views: '.',
+        ext: 'html',
         js: 'assets/scripts',
         css: 'assets/styles',
         imgs: 'assets/images',
