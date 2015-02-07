@@ -7,13 +7,12 @@ My personal lightweight starter frontend project.
 Features
 ========
 
-- HTML5 framework;
-- Extremely lightweight;
-- WAI-ARIA implemantation;
-- Htaccess (Boilerplane custom);
+- Extremely lightweight HTML5 framework;
 - Includes jQuery v2.x and relative fallback (v1.x) for olders browsers;
-- Latest Modernizr included;
-- Latest Normalize.css included;
+- [Modernizr](http://modernizr.com/) included;
+- [Normalize.css](https://github.com/necolas/normalize.css/) included;
+- Htaccess (Boilerplane custom);
+- Web Accessibility initiative (WAI-ARIA);
 - Media queries for mobile main resolutions;
 - Google Analytics snippet;
 - Header responsive;
