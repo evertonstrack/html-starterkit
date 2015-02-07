@@ -35,7 +35,13 @@
         <!-- endbuild -->
         
         <!-- build:js({.,assets}) assets/scripts/modernizr.js -->
-		<script src="assets/scripts/lib/modernizr.custom.min.js"></script>
+        <script src="assets/scripts/lib/modernizr.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({.,assets}) assets/scripts/html5shiv.js -->
+        <!--[if lt IE 9]>
+        <script src="assets/scripts/lib/html5shiv.js"></script>
+        <![endif]-->
         <!-- endbuild -->
     </head>
     <body>
@@ -107,7 +113,6 @@
         <!--[endif]-->
 
         <!-- build:js({.,assets}) assets/scripts/main.all.js -->
-        <script src="assets/scripts/plugins.js"></script>
         <script src="assets/scripts/main.js"></script>
         <!-- endbuild -->
 
