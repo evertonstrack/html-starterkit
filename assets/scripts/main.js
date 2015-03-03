@@ -1,43 +1,42 @@
 /* Author : Everton Strack (everton.strack@gmail.com) */
-
-/*
-	Avoid `console` errors in browsers that lack a console.
-	HTML5 Boilerplate (H5BP) paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
-*/
-(function(){
-	var method;
-	var noop = function(){};
-	var methods = ["assert","clear","count","debug","dir","dirxml","error","exception","group","groupCollapsed","groupEnd","info","log","markTimeline","profile","profileEnd","table","time","timeEnd","timeStamp","trace","warn"];
-	var length = methods.length;
-	var console = window.console = window.console ||{};
-	while(length--){
-		method = methods[length];
-		if(!console[method]){
-			console[method]=noop
-		}
-	}
-})();
-
-
 (function($, window, document) {
 
-/*
-	HELPER
-*/
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ HELPER --------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
 var Helper = {
-	init:function(){
-		
+
+	init:function()
+	{
+		Helper.browser();
 	},
-	isIE:function(){
+
+	isIE:function()
+	{
 		if(navigator.userAgent.match(/msie|trident/i)){ return true; }
+	},
+
+	browser:function()
+	{
+		var name = bowser.name.toLowerCase();
+		$('html').addClass(name); 
+
+		var version = String(name + Math.floor(bowser.version)).toLowerCase();
+		$('html').addClass(version);
+
+		Modernizr.mobile = bowser.mobile == true || bowser.tablet == true;
+		var mobile = Modernizr.mobile ? 'mobile' : 'no-mobile';
+		$('html').addClass(mobile);
 	}
 }
 
-/*
-	MAIN
-*/
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ MAIN ----------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
 var Main = {
-	init:function(){
+
+	init:function()
+	{
 		Helper.init();
 	}
 }
@@ -48,9 +47,12 @@ var Main = {
 /*
     document.read
 */
-$(document).ready(function(){
+$(document).ready(function()
+{
+
 	// Main.init
 	Main.init();
+
 });
 
 /*
