@@ -11,6 +11,7 @@ Features
 - Includes jQuery v2.x and relative fallback (v1.x) for olders browsers;
 - [Modernizr](http://modernizr.com/) included;
 - [Normalize.css](https://github.com/necolas/normalize.css/) included;
+- [Bowser](https://github.com/ded/bowser) for browser detect;
 - Htaccess (Boilerplane custom);
 - Web Accessibility initiative (WAI-ARIA);
 - Media queries for mobile main resolutions;
