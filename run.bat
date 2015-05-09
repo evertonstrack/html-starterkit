@@ -1,0 +1,3 @@
+@echo Iniciando...
+@echo Off
+cmd /c php -S localhost:8000
