@@ -1,21 +1,21 @@
-/*  Author : Everton Strack (everton.strack@gmail.com) */
+/* 
+* main.css
+* author : Everton Strack (everton.strack@gmail.com)
+**/
 
-/*
-	Older browser
-*/
+/* Older browser */
 .browsehappy{
 	padding: 20px;
 	margin: 0;
 	text-align: center;
-	font: 18px 'Arial, sans-serif';
+	font-size: 18px;
+	font-family: inherit;
 	color: #999;
 }
 .browsehappy a{ color: #999; font-weight: bold; }
 
 
-/*
-	GENERAL
-*/
+/* GENERAL */
 html,
 body{
 	width: 100%;
@@ -38,40 +38,10 @@ body{
   box-sizing: border-box;
 }
 
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
 
 
-
-/* ==========================================================================================================
-	MOBILE
-	Media queries for mobile main resolutions	
-========================================================================================================== */
-
-/* Smartphones (portrait and landscape) */
-@media screen and (max-width: 767px) { }
-
-/* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	.sidebar{ display: none; }
-}
-
-/*
-	SAMPLE MEDIA QUERIES
-*/
-
-/* Smartphones (landscape) */
-@media only screen and (min-width : 321px) { }
-
-/* Smartphones (portrait) */
-@media only screen and (max-width : 320px) { }
-
-/* iPads (portrait and landscape) */
-@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px) { }
-
-/* iPads (landscape) */
-@media only screen and (min-device-width : 768px)  and (max-device-width : 1024px) and (orientation : landscape) { }
-
-/* iPads (portrait) */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { }
-
-/* iPhone 4 */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) { }
+/* MAIN CODE HERE */

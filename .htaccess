@@ -5,27 +5,7 @@
 # Criado por Everton Strack. (based boilerplate)
 # ----------------------------------------------------------------------
 
-# ##############################################################################
-# # CROSS-ORIGIN RESOURCE SHARING (CORS)                                       #
-# ##############################################################################
-
-# ------------------------------------------------------------------------------
-# | Cross-domain AJAX requests                                                 |
-# ------------------------------------------------------------------------------
-
-# Enable cross-origin AJAX requests.
-# http://code.google.com/p/html5security/wiki/CrossOriginRequestSecurity
-# http://enable-cors.org/
-
-# <IfModule mod_headers.c>
-#    Header set Access-Control-Allow-Origin "*"
-# </IfModule>
-
-
-# ------------------------------------------------------------------------------
-# | Web fonts access                                                           |
-# ------------------------------------------------------------------------------
-
+# Web fonts access
 # Allow access from all domains for web fonts
 
 <IfModule mod_headers.c>
@@ -34,15 +14,8 @@
     </FilesMatch>
 </IfModule>
 
-
-# ##############################################################################
-# # ERRORS                                                                     #
-# ##############################################################################
-
-# ------------------------------------------------------------------------------
-# | 404 error prevention for non-existing redirected folders                   |
-# ------------------------------------------------------------------------------
-
+# ERRORS 
+# 404 error prevention for non-existing redirected folders
 # Prevent Apache from returning a 404 error for a rewrite if a directory
 # with the same name does not exist.
 # http://httpd.apache.org/docs/current/content-negotiation.html#multiviews
@@ -50,24 +23,14 @@
 
 Options -MultiViews
 
-# ------------------------------------------------------------------------------
-# | Custom error messages / pages                                              |
-# ------------------------------------------------------------------------------
-
+# Custom error messages / pages
 # You can customize what Apache returns to the client in case of an error (see
 # http://httpd.apache.org/docs/current/mod/core.html#errordocument), e.g.:
 
 ErrorDocument 404 /404.html
 
-
-# ##############################################################################
-# # INTERNET EXPLORER                                                          #
-# ##############################################################################
-
-# ------------------------------------------------------------------------------
-# | Better website experience                                                  |
-# ------------------------------------------------------------------------------
-
+# INTERNET EXPLORER
+# Better website experience
 # Force IE to render pages in the highest available mode in the various
 # cases when it may not: http://hsivonen.iki.fi/doctype/ie-mode.pdf.
 
@@ -80,13 +43,9 @@ ErrorDocument 404 /404.html
     </FilesMatch>
 </IfModule>
 
-# ##############################################################################
-# # MIME TYPES AND ENCODING                                                    #
-# ##############################################################################
 
-# ------------------------------------------------------------------------------
-# | Proper MIME types for all files                                            |
-# ------------------------------------------------------------------------------
+# MIME TYPES AND ENCODING
+# Proper MIME types for all files
 
 <IfModule mod_mime.c>
 
@@ -138,11 +97,9 @@ ErrorDocument 404 /404.html
 
 </IfModule>
 
-# ------------------------------------------------------------------------------
-# | UTF-8 encoding                                                             |
-# ------------------------------------------------------------------------------
-
+# UTF-8 encoding
 # Use UTF-8 encoding for anything served as `text/html` or `text/plain`.
+
 AddDefaultCharset utf-8
 
 # Force UTF-8 for certain file formats.
@@ -150,15 +107,8 @@ AddDefaultCharset utf-8
     AddCharset utf-8 .atom .css .js .json .rss .vtt .webapp .xml
 </IfModule>
 
-
-# ##############################################################################
-# # URL REWRITES                                                               #
-# ##############################################################################
-
-# ------------------------------------------------------------------------------
-# | Rewrite engine                                                             |
-# ------------------------------------------------------------------------------
-
+# URL REWRITES
+# Rewrite engine
 # Turning on the rewrite engine and enabling the `FollowSymLinks` option is
 # necessary for the following directives to work.
 
@@ -176,10 +126,7 @@ AddDefaultCharset utf-8
   # RewriteBase /
 </IfModule>
 
-# ------------------------------------------------------------------------------
-# | Suppressing / Forcing the "www." at the beginning of URLs                  |
-# ------------------------------------------------------------------------------
-
+# Suppressing / Forcing the "www." at the beginning of URLs
 # The same content should never be available under two different URLs especially
 # not with and without "www." at the beginning. This can cause SEO problems
 # (duplicate content), therefore, you should choose one of the alternatives and
@@ -218,11 +165,7 @@ AddDefaultCharset utf-8
 #    RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # </IfModule>
 
-
-# ------------------------------------------------------------------------------
-# | File access                                                                |
-# ------------------------------------------------------------------------------
-
+# File access
 # Block access to directories without a default document.
 # Usually you should leave this uncommented because you shouldn't allow anyone
 # to surf through every directory on your server (which may includes rather
@@ -255,10 +198,7 @@ AddDefaultCharset utf-8
     Satisfy All
 </FilesMatch>
 
-# ------------------------------------------------------------------------------
-# | Server software information                                                |
-# ------------------------------------------------------------------------------
-
+# Server software information
 # Avoid displaying the exact Apache version number, the description of the
 # generic OS-type and the information about Apache's compiled-in modules.
 
@@ -266,14 +206,8 @@ AddDefaultCharset utf-8
 
 # ServerTokens Prod
 
-
-# ##############################################################################
-# # WEB PERFORMANCE                                                            #
-# ##############################################################################
-
-# ------------------------------------------------------------------------------
-# | Compression                                                                |
-# ------------------------------------------------------------------------------
+# WEB PERFORMANCE
+# Compression
 
 <IfModule mod_deflate.c>
 
@@ -312,10 +246,8 @@ AddDefaultCharset utf-8
 
 </IfModule>
 
-# ------------------------------------------------------------------------------
-# | ETag removal                                                               |
-# ------------------------------------------------------------------------------
 
+# ETag removal
 # Since we're sending far-future expires headers (see below), ETags can
 # be removed: http://developer.yahoo.com/performance/rules.html#etags.
 
@@ -326,10 +258,7 @@ AddDefaultCharset utf-8
 
 FileETag None
 
-# ------------------------------------------------------------------------------
-# | Expires headers (for better cache control)                                 |
-# ------------------------------------------------------------------------------
-
+# Expires headers (for better cache control)
 # The following expires headers are set pretty far in the future. If you don't
 # control versioning with filename-based cache busting, consider lowering the
 # cache time for resources like CSS and JS to something like 1 week.
@@ -385,10 +314,7 @@ FileETag None
 
 </IfModule>
 
-# ------------------------------------------------------------------------------
-# | File concatenation                                                         |
-# ------------------------------------------------------------------------------
-
+# File concatenation
 # Allow concatenation from within specific CSS and JS files, e.g.:
 # Inside of `script.combined.js` you could have
 #   <!--#include file="libs/jquery.js" -->
@@ -408,9 +334,7 @@ FileETag None
 #    </FilesMatch>
 # </IfModule>
 
-# ------------------------------------------------------------------------------
-# | Persistent connections                                                     |
-# ------------------------------------------------------------------------------
+# Persistent connections
 
 # Allow multiple requests to be sent over the same TCP connection:
 # http://httpd.apache.org/docs/current/en/mod/core.html#keepalive.
