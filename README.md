@@ -9,7 +9,6 @@ Features
 
 - Extremely lightweight, semantic HTML5 framework;
 - [Normalize.css](https://github.com/necolas/normalize.css/) included;
-- Htaccess (Boilerplane custom);
 - Web Accessibility initiative (WAI-ARIA);
 - Media queries for main resolutions;
 - Google Analytics snippet;
