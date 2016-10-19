@@ -1,23 +1,19 @@
-flexHtml
+HTML-starterkit
 ========
 
-My personal lightweight starter frontend project.
+My personal lightweight starterkit for a frontend project.
 
 
 Features
 ========
 
-- Extremely lightweight HTML5 framework;
-- Includes jQuery v2.x and relative fallback (v1.x) for olders browsers;
-- [Modernizr](http://modernizr.com/) included;
+- Extremely lightweight, semantic HTML5 framework;
 - [Normalize.css](https://github.com/necolas/normalize.css/) included;
-- [Bowser](https://github.com/ded/bowser) for browser detect;
 - Htaccess (Boilerplane custom);
 - Web Accessibility initiative (WAI-ARIA);
-- Media queries for mobile main resolutions;
+- Media queries for main resolutions;
 - Google Analytics snippet;
-- Header responsive;
-- Grunt build (minify styles/scripts, caching control);
+- Grunt for build tasks (minify styles/scripts, caching control);
 
 
 Required (for grunt features)
